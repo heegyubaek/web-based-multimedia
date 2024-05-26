@@ -1,7 +1,10 @@
 {
   "private": true,
+  "homepage": "https://heegyubaek.github.io/web-based-multimedia/",
   "scripts": {
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles",
     "dev": "next dev",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
